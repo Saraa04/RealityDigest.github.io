@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+	<head>
+		<title>Reality Digest | Issues</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/foundation.css">
+		<link rel="stylesheet" href="css/foundation-rtl.css">
+		<link rel="stylesheet" href="css/foundation-prototype.css">
+		<link rel="stylesheet" href="css/foundation-float.css">
+		<link rel="stylesheet" href="css/custom.css">
+		<link rel="stylesheet" href="progress.css">
+		
+		
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+		
+
+	</head>
+	<body>
+		<div class="container background-white">
+			<header class="row" id="main">
+				<div class="large-4 column">
+					<div class="brand">
+						<a href="index.html">Reality Digest</a>
+					</div>
+				</div>
+				<nav id="main" class="large-8 column">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li class="dropdown">
+							  <button class="dropbtn">ISSUES</button>
+							  <div class="dropdown-content">
+								<a href="issues.html" id="iss1">March 2021</a>
+								<a href="">April 2021</a>
+							  </div>
+						</li>
+						<li><a href="documentation.html">Documentation</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="disclaimer.html">Disclaimer</a></li>
+						<li><a href="subscribe.html" class="button button-primary">SUBSCRIBE</a></li>
+					</ul>
+				</nav>
+			</header>
+			
+			<style>
+				.outer {
+				  display: flex;
+				  margin: 7vh 5vw;
+				}
+				
+				.expandable {
+				  background-color: #eee;
+				  padding: 5px;
+				  margin-right: 5px;
+				  flex: 1 1 0;
+				}
+				
+				.expandable.expanded {
+				  flex: 1 1 100%;
+				}
+
+				.no-grid-warning {
+				  position: fixed;
+				  width: 100vw;
+				  height: 100vh;
+				  z-index: 10000;
+				  color: red;
+				  left:0;
+				  top:0;
+				  background-color: #fff;
+				  text-align:center;
+				  padding: 20px;
+				}
+				
+				.metadata-viewer {
+				  color: #a3998e;
+				}
+				
+				.pagination {
+				font-family: 'Lato';
+				font-size: 1rem;
+				margin-top: 20px;
+				margin-left: 65vw;
+				}
+			</style>
+			
+			<div class='outer'>
+				<div class="row column small-8 align-center">
+					<iframe width="250" height="515" src="metadata_viewer.html" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="row column small-8 align-center">
+					<iframe width="560" height="680" src="crown_memphis.html" frameborder="0" allowfullscreen></iframe>
+				</div>
+				  
+				<div class="row column small-8 align-center">
+					<iframe width="560" height="680" src="princess_memphis.html" frameborder="0" allowfullscreen></iframe>
+				</div>
+				  
+				<div class="row column small-8 align-center">
+					<iframe width="530" height="680" src="queen_memphis.html" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			
+			<nav aria-label="Pagination">
+			  <ul class="pagination text-center">
+				<li class="pagination-previous disabled">Previous</li>
+				<li><a href="issues.html" aria-label="Page 1">Year 1600</a></li>
+				<li><a href="issues-pg2.html" aria-label="Page 2">Year 1981</a></li>
+				<li class="pagination-next"><a href="issues.html" aria-label="Next page">Next</a></li>
+			  </ul>
+			</nav>	
+		</div>
+			
+		<script>
+			if (Modernizr.testAllProps('gridRowGap') === false) {
+			  $('body').append("<div class='no-grid-warning'>Your browser does not support CSS-Grid - this demo requires CSS-grid to function properly</div>");
+			}
+
+			$('.expandable [data-toggle]').on('click', function(e) {
+			  e.preventDefault();
+			  $('.expandable').toggleClass('expanded')
+			  if($('.expandable').hasClass('expanded')) {
+				$(this).text('Shrink Me');
+			  } else {
+				$(this).text('Expand Me');
+			  }
+			  setTimeout(function() {
+				window.containerQueries.reevaluate(false);
+			  }, 1);
+			});
+		</script
+		
+	</body>
+</html>
