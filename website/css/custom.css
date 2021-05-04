@@ -1,0 +1,289 @@
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+
+body {
+	font-family: 'Open sans';
+	
+}
+
+/* **Headers** */
+
+h1
+h2
+h3
+h4
+h5 {
+	font-family: 'Lato', sans-serif;
+
+}
+
+/* **Containers ** */
+
+.container {
+	padding:40px 20px;
+}
+
+.container-spacy {
+	padding: 40px 20px;
+}
+
+/* **Background** */
+
+.background-white {
+	background-color: #ffffff;
+	
+}
+
+.background-black {
+	background-color: #000000;
+	
+}
+
+.background-brown {
+	background-color: #5a473a;
+}
+
+.background-grey {
+	background-color: #3a3a3a;
+}
+	
+
+/* **Header** */
+
+header#main {
+	margin-bottom: 40px;
+	
+}
+
+header#main .brand a {
+	display: block;
+	font-family: 'Limelight', cursive;
+	text-transform: uppercase;
+	font-size: 2.5rem;
+	text-align: center;
+	color: #161412;
+	margin-bottom: 20px;
+	border: #000000 solid;
+	
+}
+
+/* **Nav** */
+
+nav#main ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+nav#main ul li {
+	display: inline-block;
+	margin-right: 20px;	
+}
+
+nav#main ul li:last-child {
+	margin-right: 0;
+	
+}
+
+nav#main ul li a {
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	font-weight: 600;
+	
+}
+
+nav#main ul li a:not(.button) {
+	color: #161412;
+	
+}
+
+/* **Buttons ** */
+
+.button {
+	padding: 14px 20px;
+	border-radius: 5px;
+}
+
+.button-primary,
+.button-primary:hover {
+	background: #5a473a;
+	color: #ffffff;
+}
+
+.button-secondary,
+.button-secondary:hover {
+	background-color: #ddd9d6;
+	color: #600f16;
+
+}
+
+/* **Feature** */
+
+.feature {
+	margin-top: 25px;
+}
+
+.feature h1 {
+	font-size: 4rem;
+	color: #5a473a;
+	text-transform: uppercase;
+	font-weight: 900;
+	line-height: 70px;
+	margin-top: 70px;
+	margin-bottom:20px;
+	
+}
+
+.feature img {
+	width: 100%;
+	
+}
+
+/* **Features** */
+
+.features {
+	text-align: center;
+	
+}
+
+.features h5 {
+	font-family: 'Lato';
+	font-weight: 600;
+	font-size: 1.4rem;
+}
+
+.features p {
+	font-family: 'Lato';
+	font-size: 0.8rem;
+	margin-bottom: 15px;
+}
+
+.features img {
+	max-width: 40%;
+	margin-bottom: 30px;
+	border: #161412 solid;
+}
+
+/* **Recent** */
+
+.recent {
+	text-align: center;	
+}
+
+.recent h2 {
+	color: #161412;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-top: 10px;
+}
+
+.recent p {
+	margin-bottom: 60px;
+	color: #161412;
+}
+
+.recent .item {
+	padding: 5px 0;
+	margin-top: 30px; /* already have guessed it's basically because when we create a new row we want there to be padding underneath each one as well as on the side the side paddings created naturally by the grid system within foundation. But on the bottom we won't see any padding unless we specify our margins sorry unless we specify it */
+}
+
+.recent ul li a { 		/*a = anchors*/
+	color: #5a473a;
+	border: 2px solid transparent;
+	padding: 8px 20px;
+	border-radius: 5px;
+	font-weight: 600;
+}
+
+.recent ul li a:hover {
+	border: 2px solid #161412;
+}
+
+.recent ul li.selected a {
+	background: #5a473a;
+	color: #ffffff;
+}
+
+.recent .show-more {
+	margin-top: 40px;
+	font-weight: 600;
+	background: #161412;
+	color: #ffffff;
+}
+
+/* **Lists** */
+
+.inline-list {
+	list-style-type: none;
+
+}
+
+.inline-list li {
+	display: inline-block;
+	margin: 0 20px; /*sets margin top & bottom to 0px, left & right to 20px*/
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+
+.switch .switch-paddle {
+	background-color: #000000;
+}
+
+
+/* **Toggler** */
+
+.callout {
+	display: none;
+
+&.is-shown {
+	display: block;
+	}
+}
+
+/* Dropdown Button */
+.dropbtn {
+	background-color: #f1f1f1;
+	color: #161412;
+	font-size: 0.9rem;
+	font-weight: 600;
+	padding: 14px 20px;
+	border-radius: 5px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	color: #161412;
+	font-family: 'Open Sans';
+	font-size: 0.8rem;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #CFCDE2;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #f1f1f1;}
