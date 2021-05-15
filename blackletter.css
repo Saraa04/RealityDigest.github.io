@@ -5,6 +5,14 @@
 @media only screen and (min-width:768px) { body {max-width: 100%;}}
 @page { size: 480mm 323mm; }
 
+@font-face {
+    font-family: 'ruslan_displayregular';
+    src: url('ruslandisplay-regular-webfont.woff2') format('woff2'),
+         url('ruslandisplay-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 p:first-of-type::first-letter {
 	font-family: 'CyrillicGoth', arial;
