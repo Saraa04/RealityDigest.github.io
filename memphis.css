@@ -156,23 +156,6 @@ h5 {
 	
 }
 
-#right {
-	float: right;
-
-}
-#left, #right {
-	display:inline-block;
-	vertical-align:top;
-	width: 45%;
-	margin: 5px;
-  
-}
-
-.lHighlight, .rHighlight{
-	background-color:#ccc;
-  
-}
-
 table {
 	border-collapse: collapse;
   
@@ -187,7 +170,7 @@ table.center {
 td, th {
 	border: 5px groove #e7684c;
 	background-color: #ffffff;
-	padding: 10px 5px;
+	padding: 0.625em 0.3125em;
 	
 	text-align: left;
 	font-family: 'Raleway', sans-serif;
@@ -231,6 +214,6 @@ footer {
 	text-align: center;
 	border: 5px dotted #e7684c;
 	margin-top: 1vh;
-	padding: 10px 15px;
+	padding:  0.625em 1em;
 	
 }
