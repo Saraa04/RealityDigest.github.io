@@ -103,6 +103,7 @@ blockquote {
 	font-family: 'CyrillicGoth', arial;
 	font-size: 1.2rem;
 	color: #811112;
+	text-align: justify;
 	word-wrap: break-word;
 	float: center;
 	
