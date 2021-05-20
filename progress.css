@@ -3,9 +3,9 @@
 /* Colors */
 /* Calculations */
 /* Placeholders */
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
 @media (min-width: 1000px) {
   #timeline .demo-card:nth-child(even) .head::after, #timeline .demo-card:nth-child(odd) .head::after {
     position: absolute;
