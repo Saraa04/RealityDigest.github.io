@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
-@import url(https://allfont.net/allfont.css?fonts=cyrillicgoth);
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 
 @media only screen and (min-width:7680px) { body {max-width: 100%;}}
 @page { size: 480mm 323mm; }
 
 p:first-of-type::first-letter {
-	font-family: 'CyrillicGoth', arial;
+	font-family: 'Berkshire Swash', cursive;
 	font-size: 7rem;
 	color: #811112;
   
@@ -32,7 +32,7 @@ img {
 
 figcaption {
 	color:#8B0000 ;
-	font-family: 'CyrillicGoth', arial;
+	font-family: 'Berkshire Swash', cursive;
 	font-size: 1rem;
 	text-align: center;
 	margin-left: 0.2vw;
@@ -87,7 +87,7 @@ p::first-letter {
  
 
 h1 {
-	font-family: 'CyrillicGoth', arial;
+	font-family: 'Berkshire Swash', cursive;
 	text-align: center;
 	font-size: 2.5rem;
 	color: #811112;
@@ -99,7 +99,7 @@ h1 {
 }
 
 blockquote { 
-	font-family: 'CyrillicGoth', arial;
+	font-family: 'Berkshire Swash', cursive;
 	font-size: 1.2rem;
 	color: #811112;
 	text-align: justify;
@@ -112,7 +112,7 @@ blockquote {
 
 
 h2 {
-	font-family: 'CyrillicGoth', arial;
+	font-family: 'Berkshire Swash', cursive;
 	font-size: 1.5rem;
 	color: #811112;
 	margin-right: 15vw;
@@ -120,7 +120,7 @@ h2 {
 }
 
 h2::first-letter {
-	font-family: 'CyrillicGoth', arial;
+	font-family: 'Berkshire Swash', cursive;
 	font-size: 1.5rem;
 	color: #000000;
 	
