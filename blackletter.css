@@ -1,10 +1,9 @@
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap" rel="stylesheet">;
-<link href="https://allfont.net/allfont.css?fonts=cyrillicgoth" rel="stylesheet" type="text/css" />;
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">;
-@media only screen and (min-width:768px) { body {max-width: 100%;}}
-@page { size: 480mm 323mm; }
+@import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
+@import url(https://allfont.net/allfont.css?fonts=cyrillicgoth);
 
+@media only screen and (min-width:7680px) { body {max-width: 100%;}}
+@page { size: 480mm 323mm; }
 
 p:first-of-type::first-letter {
 	font-family: 'CyrillicGoth', arial;
