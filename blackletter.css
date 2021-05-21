@@ -31,12 +31,12 @@ img {
 }
 
 figcaption {
-	color:#8B0000 ;
+	color: #8B0000;
 	font-family: 'Berkshire Swash', cursive;
 	font-weight: lighter;
-	font-size: 1rem;
+	font-size: 0.9rem;
 	text-align: center;
-	margin-left: 0.2vw;
+	margin-left: 0.1vw;
 	margin-right: 10vw;
 	
 }
